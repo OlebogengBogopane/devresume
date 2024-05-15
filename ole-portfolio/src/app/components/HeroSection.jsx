@@ -30,7 +30,7 @@ const HeroSection = () => {
     />
                     </h1>
                 <p className='text-base  sm:text-lg mb-6 lg:text-xl'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut nulla consequatur numquam odit, quia quibusdam. Harum culpa, debitis, quis autem, voluptates necessitatibus nostrum minus soluta a fugiat dicta et.
+                I am a Junior frontend developer passionate about  improving user experience and design. My passion is to produce incredibly engaging and interactive landing pages that draws viewers interest and encourage deep connection
                 </p>
                     <div>
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#35945c]  hover:bg-slate-700 text-black'>Hire me</button>
