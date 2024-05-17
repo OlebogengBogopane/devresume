@@ -35,7 +35,7 @@ const Navbar = () => {
                     {!navbarOpen ? (
                     <button 
                     onClick={()=> setNavbarOpen(true)}
-                    className='text-slate-200 flex items-center px-3 py-3 border rounded border-slate-200 hover:bg-slate-500'>
+                    className='text-slate-200 flex items-center px-2 py-2 border rounded border-slate-200 hover:bg-slate-500'>
                         <img src='/images/burger-men.png' alt='menu' className='w-5 h-5' />
                         </button>
                     ):(
