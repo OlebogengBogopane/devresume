@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import NavLink from './NavLink'
-
+import MenuOverlay from './MenuOverlay'
 
 const navLinks = [
     {
@@ -59,6 +59,7 @@ const Navbar = () => {
                 </ul>
             </div>
         </div>
+        {navbarOpen ? <MenuOverlay links={navLinks}/> : null}
     </nav>
   )
 }
