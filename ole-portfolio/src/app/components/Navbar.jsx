@@ -61,7 +61,7 @@ const Navbar = () => {
         </div>
         {navbarOpen ? <MenuOverlay links={navLinks}/> : null}
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
