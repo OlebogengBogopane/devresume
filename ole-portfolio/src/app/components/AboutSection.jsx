@@ -10,9 +10,11 @@ const TAB_DATA = [
     id:"skills",
     content :
     <ul>
-      <li>
-        
-      </li>
+      <li> Node.js </li>
+      <li> Scrimba </li>
+      <li> Next.js </li>
+      <li> Javascript </li>
+      <li> React </li>
     </ul>
   }
 ]
