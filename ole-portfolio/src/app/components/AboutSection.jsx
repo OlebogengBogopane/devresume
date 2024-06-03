@@ -1,7 +1,18 @@
-import React from 'react'
+"use client"
+import React ,{useTransition, useState} from 'react'
 import Image from 'next/image'
+import TabButton from './TabButton'
 
 const AboutSection = () => {
+  const [tab, setTab] = useState ("skills");
+  const [isPending ,startTransition] = useTransition();
+
+  const handleTabChange = (id) => {
+    startTransition (()=>{
+      setTab(id)
+    })
+}
+
   return (
     <section className=''>
         <div className=' md:grid  md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
@@ -11,9 +22,20 @@ const AboutSection = () => {
                 <p className='md:text-lg'> I am a Software developer graduate from CodeSpace academy with 1year experience ,learning html,css and javascript alongside javscript frameworks(React & NextJs). throughout the program I learned how to work in an Agile environment and deliver seamingless and up to par web applications.I work very well in teams and always look forward to gaining new skills and creative innovative applications for my community and the world at large
                 </p>
                 <div className='flex flex-row mt-8 '>
-                    <span className='mr-3 font-semibold mt-bold '>Skills</span>
-                    <span className=''>Education</span>
-                    <span className=''>Experience</span>
+                  <TabButton 
+                  selectTab={()=> handleTabChange("Skills")} active={tab==="skills"}> Skills
+                   </TabButton>
+
+                   <TabButton 
+                  selectTab={()=> handleTabChange("Education")} active={tab==="Education"}> Education
+                   </TabButton>
+
+                   <TabButton 
+                  selectTab={()=> handleTabChange("Certificates")} active={tab==="Certificates"}> Certificates
+                   </TabButton>
+
+                   
+                    
                 </div>
             </div>
            
