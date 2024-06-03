@@ -3,6 +3,21 @@ import React ,{useTransition, useState} from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
 
+
+const TAB_DATA = [
+  {
+    title: "skills",
+    id:"skills",
+    content :
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+  }
+]
+
+
 const AboutSection = () => {
   const [tab, setTab] = useState ("skills");
   const [isPending ,startTransition] = useTransition();
@@ -32,6 +47,7 @@ const AboutSection = () => {
 
                    <TabButton 
                   selectTab={()=> handleTabChange("Certificates")} active={tab==="Certificates"}> Certificates
+
                    </TabButton>
 
                    
