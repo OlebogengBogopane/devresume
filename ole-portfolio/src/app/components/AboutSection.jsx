@@ -40,15 +40,15 @@ const AboutSection = () => {
                 </p>
                 <div className='flex flex-row mt-8 '>
                   <TabButton 
-                  selectTab={()=> handleTabChange("Skills")} active={tab==="skills"}> Skills
+                  selectTab={()=> handleTabChange("Skills")} active={tab==="skills"}> {""}Skills{""}
                    </TabButton>
 
                    <TabButton 
-                  selectTab={()=> handleTabChange("Education")} active={tab==="Education"}> Education
+                  selectTab={()=> handleTabChange("Education")} active={tab==="Education"}>{""} Education{""}
                    </TabButton>
 
                    <TabButton 
-                  selectTab={()=> handleTabChange("Certificates")} active={tab==="Certificates"}> Certificates
+                  selectTab={()=> handleTabChange("Certificates")} active={tab==="Certificates"}> {""}Certificates{""}
 
                    </TabButton>
 
