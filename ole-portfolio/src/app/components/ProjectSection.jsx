@@ -17,6 +17,13 @@ const projectData = [
         image:"/images/projects/2.png",
         tag:["All","Web"],
     },
+    {
+        id:3,
+        title:"MK simulation",
+        description:"Project 3 description",
+        image:"/images/projects/3.png",
+        tag:["All","Web"],
+    },
 ];
 
 const ProjectSection = () => {
