@@ -2,6 +2,7 @@
 import React ,{useTransition, useState} from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
+import ProjectSection from './ProjectSection';
 
 
 const TAB_DATA = [
@@ -83,6 +84,7 @@ const AboutSection = () => {
                     
                 </div>
                 <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content} </div>
+                <div><ProjectSection /></div>
             </div>
         </div>
     </section>
