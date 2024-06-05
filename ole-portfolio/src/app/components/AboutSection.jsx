@@ -6,22 +6,49 @@ import TabButton from './TabButton'
 
 const TAB_DATA = [
   {
-    title: "skills",
-    id:"skills",
-    content :
+    title: "Skills",
+    id:"Skills",
+    content :(
     <ul>
       <li> Node.js </li>
       <li> Scrimba </li>
       <li> Next.js </li>
       <li> Javascript </li>
       <li> React </li>
+      <li> Creative Arts </li>
     </ul>
-  }
-]
+    )
+  },
+  {
+    title: "Education",
+    id:"Education",
+    content :(
+    <ul>
+      <li> Code Space Academy </li>
+      <li> T-Systems SA</li>
+      <li> Bafokeng High School </li>
+    </ul>
+    )
+  },
+
+  {
+  title: "Certificates",
+  id:"Certificates",
+  content :(
+  <ul>
+    <li> Code Space Academy </li>
+    <li> Udemy</li>
+    <li> CompTIA certification </li>
+    <li> Huawei Academy </li>
+  </ul>
+  ),
+},
+
+];
 
 
 const AboutSection = () => {
-  const [tab, setTab] = useState ("skills");
+  const [tab, setTab] = useState ("Skills");
   const [isPending ,startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -38,9 +65,9 @@ const AboutSection = () => {
                 <h2 className='text-4xl font-bold mb-4 '>About Me</h2>
                 <p className='md:text-lg'> I am a Software developer graduate from CodeSpace academy with 1year experience ,learning html,css and javascript alongside javscript frameworks(React & NextJs). throughout the program I learned how to work in an Agile environment and deliver seamingless and up to par web applications.I work very well in teams and always look forward to gaining new skills and creative innovative applications for my community and the world at large
                 </p>
-                <div className='flex flex-row mt-8 '>
+                <div className='flex flex-row  mt-8 '>
                   <TabButton 
-                  selectTab={()=> handleTabChange("Skills")} active={tab==="skills"}> {""}Skills{""}
+                  selectTab={()=> handleTabChange("Skills")} active={tab==="Skills"}> {""}Skills{""}
                    </TabButton>
 
                    <TabButton 
@@ -55,9 +82,8 @@ const AboutSection = () => {
                    
                     
                 </div>
+                <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content} </div>
             </div>
-           
-            
         </div>
     </section>
   )
