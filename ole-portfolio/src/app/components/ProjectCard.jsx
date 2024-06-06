@@ -2,14 +2,14 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 
-const ProjectCard = ( {imgUrl, title, description }) => {
+const ProjectCard = ( {imgUrl, title, description, gitUrl, previewUrl, }) => {
   return (
     <div>
         <div className='h-52 md:h-72 rounded-t-xl relative group' 
                 style={{ background:`url(${imgUrl})`, backgroundSize:"cover"}}
                 >
                     <div className='overlay flex items-center justify-center space-x-4 absolute top-0 left-0 w-full h-full bg-[#199a1988] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500'>
-                        <Link href="/" className='h-14 w-14 border-2 rounded-full border-[#54ac71] hover:border-white flex items-center justify-center group/link'>
+                        <Link href={gitUrl} className='h-14 w-14 border-2 rounded-full border-[#54ac71] hover:border-white flex items-center justify-center group/link'>
                         <Image 
                         className='w-10 h-10  text-[#54ac71]   cursor-pointer group-hover/link hover:text-white'
                         src="/images/view-icon.png"
@@ -20,7 +20,7 @@ const ProjectCard = ( {imgUrl, title, description }) => {
                         </Link>
                         
                     
-                        <Link href="/" className='h-14 w-14 border-2 rounded-full border-[#54ac71] hover:border-white flex items-center justify-center group/link'>
+                        <Link href={previewUrl} className='h-14 w-14 border-2 rounded-full border-[#54ac71] hover:border-white flex items-center justify-center group/link'>
                         <Image className='w-10 h-10  text-[#54ac71]  cursor-pointer group-hover/link hover:text-white'
                         src="/images/eye-icon.png"
                         alt='eye'

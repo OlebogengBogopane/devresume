@@ -9,6 +9,8 @@ const projectData = [
         description:"Project 1 description",
         image:"/images/projects/1.png",
         tag:["All","Web"],
+        gitUrl:"https://scratch.mit.edu/projects/772671523",
+        previewUrl:"/",
     },
     {
         id:2,
@@ -16,6 +18,8 @@ const projectData = [
         description:"Project 2 description",
         image:"/images/projects/2.png",
         tag:["All","Web"],
+        gitUrl:"/",
+        previewUrl:"/",
     },
     {
         id:3,
@@ -23,6 +27,8 @@ const projectData = [
         description:"Project 3 description",
         image:"/images/projects/3.png",
         tag:["All","Web"],
+        gitUrl:"/",
+        previewUrl:"/",
     },
 ];
 
@@ -39,7 +45,10 @@ const ProjectSection = () => {
          title={project.title}
           description={project.description} 
           imgUrl={project.image}
-          tags={project} 
+          tags={project.project} 
+          gitUrl={project.gitUrl}
+          previewUrl={project.previewUrl}
+          
         />
     ))}
     </div>
