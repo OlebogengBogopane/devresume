@@ -48,7 +48,9 @@ const ProjectSection = () => {
    </h2>  
    <div className='text-green-200 flex flex-row justify-center items-center gap-2 py-4
    '>
-   <ProjectTag onClick={handleTagChange} tag="All" active={tag} />
+   <ProjectTag 
+   onClick={handleTagChange}
+    tag="All" isSelected={tag === "All"} />
    </div>
     <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
         {projectData.map((project) => (
