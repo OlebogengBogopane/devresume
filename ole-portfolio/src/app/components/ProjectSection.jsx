@@ -38,9 +38,10 @@ const ProjectSection = () => {
    <h2 className='text-center text-4xl font-bold text-green-600 mt-4'>
     My Projects
    </h2>  
-   <div>
-    <button className=''>All</button>
-    <button className=''>Web</button>
+   <div className='text-green-200 flex flex-row justify-center items-center gap-2 py-4
+   '>
+    <button className='rounded-full border-2 border-green-500 px-6 py-3 text-xl cursor-pointer'>All</button>
+    <button className='rounded-full border-2 border-green-500 px-6 py-3 text-xl cursor-pointer'>Web</button>
    </div>
     <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
         {projectData.map((project) => (
