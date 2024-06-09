@@ -37,7 +37,11 @@ const ProjectSection = () => {
    <> 
    <h2 className='text-center text-4xl font-bold text-green-600 mt-4'>
     My Projects
-   </h2>
+   </h2>  
+   <div>
+    <button className=''>All</button>
+    <button className=''>Web</button>
+   </div>
     <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
         {projectData.map((project) => (
         <ProjectCard 
