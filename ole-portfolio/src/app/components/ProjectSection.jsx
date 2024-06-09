@@ -1,5 +1,7 @@
-import React from 'react'
-import ProjectCard from './ProjectCard'
+"use client";
+import React, {useState} from 'react';
+import ProjectCard from './ProjectCard';
+import ProjectTag from './ProjectTag';
 
 
 const projectData = [
@@ -33,6 +35,12 @@ const projectData = [
 ];
 
 const ProjectSection = () => {
+    const [tag, setTag] = useState("All");
+
+    const handleTagChange = (newTag) => {
+        setTag(newTag);
+    };
+
   return (
    <> 
    <h2 className='text-center text-4xl font-bold text-green-600 mt-4'>
@@ -40,9 +48,7 @@ const ProjectSection = () => {
    </h2>  
    <div className='text-green-200 flex flex-row justify-center items-center gap-2 py-4
    '>
-    <button className='rounded-full border-2 border-green-500 hover:border-white px-6 py-3 text-xl cursor-pointer'>All</button>
-
-    <button className='rounded-full border-2 border-green-500 hover:border-white px-6 py-3 text-xl cursor-pointer'>Web</button>
+   <ProjectTag onClick={handleTagChange} tag="All" active={tag} />
    </div>
     <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
         {projectData.map((project) => (
