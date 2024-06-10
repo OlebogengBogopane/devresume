@@ -32,6 +32,15 @@ const projectData = [
         gitUrl:"/",
         previewUrl:"/",
     },
+    {
+        id:4,
+        title:"Another example",
+        description:"Project 4 description",
+        image:"/images/projects/3.png",
+        tag:["Mobile"],
+        gitUrl:"/",
+        previewUrl:"/",
+    },
 ];
 
 const ProjectSection = () => {
@@ -41,9 +50,9 @@ const ProjectSection = () => {
         setTag(newTag);
     };
 
-    const filteredProjects = projectData.filter((project) => {
+    const filteredProjects = projectData.filter((project) => 
         project.tag.includes(tag)
-    });
+    );
 
   return (
     
