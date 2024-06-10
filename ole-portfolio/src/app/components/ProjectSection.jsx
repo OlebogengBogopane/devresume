@@ -42,7 +42,9 @@ const ProjectSection = () => {
     };
 
   return (
+    
    <> 
+   
    <h2 className='text-center text-4xl font-bold text-green-600 mt-4'>
     My Projects
    </h2>  
@@ -50,7 +52,20 @@ const ProjectSection = () => {
    '>
    <ProjectTag 
    onClick={handleTagChange}
-    tag="All" isSelected={tag === "All"} />
+    name="All" 
+    isSelected={tag === "All"} 
+    />
+    <ProjectTag 
+   onClick={handleTagChange}
+    name="Web" 
+    isSelected={tag === "Web"} 
+    />
+    <ProjectTag 
+   onClick={handleTagChange}
+    name="Mobile" 
+    isSelected={tag === "Mobile"} 
+    
+    />
    </div>
     <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
         {projectData.map((project) => (
@@ -64,6 +79,7 @@ const ProjectSection = () => {
           previewUrl={project.previewUrl}
           
         />
+        
     ))}
     </div>
     </> 
