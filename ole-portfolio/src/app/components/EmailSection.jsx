@@ -32,13 +32,14 @@ const EmailSection = () => {
             </div>
         </div>
         <div>
-            <form className="text-green-700 flex flex-col gap-4 ">
-              <label htmlFor="email" className='font-bold'>
+            <form className="text-green-600 flex flex-col gap-4 ">
+              <label htmlFor="email" className='font-bold block mb-2 text-sm '>
                 Type email here
                 </label>
                 <input type="email" 
                 id='email'
                 required 
+                className='bg-[#68b06861] text-white'
                 placeholder='BAHero@mail.com'/>
             </form>
         </div>
