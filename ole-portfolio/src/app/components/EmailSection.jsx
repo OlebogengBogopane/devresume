@@ -32,15 +32,30 @@ const EmailSection = () => {
             </div>
         </div>
         <div>
-            <form className="text-green-600 flex flex-col gap-4 ">
-              <label htmlFor="email" className='font-bold block mb-2 text-sm '>
+            <form className="text-green-600 flex flex-col gap-4  ">
+              <label
+               htmlFor="email" className='font-bold block mb-1 text-sm '
+              >
                 Type email here
                 </label>
                 <input type="email" 
                 id='email'
                 required 
                 className='bg-[#68b06861] text-white border border-[#b4f3c911] text-sm rounded-lg block w-full p-2.5'
-                placeholder='BAHero@mail.com'/>
+                placeholder='BAHero@mail.com'
+                />
+
+                 <label
+               htmlFor="subject" className='font-bold block mb-2 text-sm '
+              >
+                Subject
+                </label>
+                <input type="text" 
+                id='subject'
+                required 
+                className='bg-[#68b06861] text-white border border-[#b4f3c911] text-sm rounded-lg block w-full p-2.5'
+                placeholder='Input text here'
+                />
             </form>
         </div>
     </section>
