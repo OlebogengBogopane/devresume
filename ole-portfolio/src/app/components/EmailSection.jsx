@@ -19,7 +19,7 @@ const EmailSection = () => {
                                 />
                      </Link>
 
-              <Link href="www.linkedin.com/in/olebogengbogopane- 649a63ab/">
+              <Link href="www.linkedin.com/in/olebogengbogopane-649a63ab/">
                      <Image 
                         className='w-10 h-10  text-[#54ac71]   cursor-pointer group-hover/link hover:text-white'
                         src="/images/Linkedin.png"
