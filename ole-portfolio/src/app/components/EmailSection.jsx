@@ -39,7 +39,7 @@ const EmailSection = () => {
                 <input type="email" 
                 id='email'
                 required 
-                className='bg-[#68b06861] text-white'
+                className='bg-[#68b06861] text-white border border-[#b4f3c911] text-sm rounded-lg block w-full p-2.5'
                 placeholder='BAHero@mail.com'/>
             </form>
         </div>
