@@ -62,8 +62,19 @@ const EmailSection = () => {
                 </div>
                 <div className='mb-6'>
                     <label
-                     htmlFor="message"></label>
+                     htmlFor="message"
+                     className='block text-sm mb-2 font-bold'
+                     >Message
+                     </label>
+                     <textarea
+                      name="message"
+                      id="message"
+                      className='bg-[#68b06861] text-white border border-[#b4f3c911] text-sm rounded-lg block w-full p-2.5'
+                     placeholder='Type your message here'
+                      > </textarea>
                 </div>
+                <button
+                ></button>
             </form>
         </div>
     </section>
