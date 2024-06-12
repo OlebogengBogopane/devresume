@@ -74,7 +74,9 @@ const EmailSection = () => {
                       > </textarea>
                 </div>
                 <button
-                ></button>
+                type='submit'
+                className='bg-green-600 hover:bg-green-800 text-white font-bold py-2.5 px-5 rounded-lg w-full'
+                >Submit</button>
             </form>
         </div>
     </section>
