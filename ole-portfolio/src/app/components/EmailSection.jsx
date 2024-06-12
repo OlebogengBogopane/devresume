@@ -18,7 +18,9 @@ const EmailSection = () => {
                                 height={40}
                                 />
                      </Link>
+                   </div>
 
+            <div className='mb-6 '>
               <Link href="www.linkedin.com/in/olebogengbogopane-649a63ab/">
                      <Image 
                         className='w-10 h-10  text-[#54ac71]   cursor-pointer group-hover/link hover:text-white'
@@ -33,9 +35,9 @@ const EmailSection = () => {
         </div>
         <div>
             <form className="text-green-600 flex flex-col gap-1  "> 
-                <div>
+                <div className='mb-6'>
                     <label
-                    htmlFor="email" className='font-bold block  text-sm '
+                    htmlFor="email" className='font-bold block mb-2  text-sm '
                     >
                         Type email here
                         </label>
@@ -47,7 +49,7 @@ const EmailSection = () => {
                         />
 
                         <label
-                    htmlFor="subject" className='font-bold block text-sm '
+                    htmlFor="subject" className='font-bold block mb-2 text-sm '
                     >
                         Subject
                         </label>
@@ -57,6 +59,10 @@ const EmailSection = () => {
                         className='bg-[#68b06861] text-white border border-[#b4f3c911] text-sm rounded-lg block w-full p-2.5'
                         placeholder='Input text here'
                         />
+                </div>
+                <div className='mb-6'>
+                    <label
+                     htmlFor="message"></label>
                 </div>
             </form>
         </div>
