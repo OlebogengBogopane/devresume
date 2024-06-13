@@ -4,35 +4,37 @@ import Link from 'next/link'
 
 const EmailSection = () => {
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4'>
-        <div>
-            <h5 className='text-xl font-bold my-2'>Let's Connect</h5>
-            <p className='text-[#43eb78] mb-4 max-w-md'>{""}looking forward to networking and discussing further how we can connect
-            </p>
-            <div className='socials flex flex-row gap-2'>
-                <Link href="https://github.com/OlebogengBogopane">
-                    <Image   className='w-10 h-10  text-[#54ac71]   cursor-pointer group-hover/link hover:text-white'
-                                src="/images/github-icon.png"
-                                alt='view'
-                                width={40}
-                                height={40}
-                                />
-                     </Link>
-                   </div>
+    <section className='grid  md:grid-cols-2 my-12 md:my-12 py-24 gap-4'>
+       <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-600 to-transparent rounded-full h-80 w-80 z-0 blur-lg'> </div>
+            <div>
+                <h5 className='text-xl font-bold my-2'>Let's Connect</h5>
+                <p className='text-[#43eb78] mb-4 max-w-md'>{""}looking forward to networking and discussing further how we can connect
+                </p>
+                <div className='socials flex flex-row gap-2'>
+                    <Link href="https://github.com/OlebogengBogopane">
+                        <Image   className='w-10 h-10  text-[#54ac71]   cursor-pointer group-hover/link hover:text-white'
+                                    src="/images/github-icon.png"
+                                    alt='view'
+                                    width={40}
+                                    height={40}
+                                    />
+                        </Link>
+                    </div>
 
-            <div className='mb-6 '>
-              <Link href="www.linkedin.com/in/olebogengbogopane-649a63ab/">
-                     <Image 
-                        className='w-10 h-10  text-[#54ac71]   cursor-pointer group-hover/link hover:text-white'
-                        src="/images/Linkedin.png"
-                        alt='view'
-                        width={40}
-                        height={40}
-                        />
-               </Link>              
-                      
+                <div className='socials flex flex-row gap-2'>
+                <Link href="www.linkedin.com/in/olebogengbogopane-649a63ab/">
+                        <Image 
+                            className='w-10 h-10  text-[#54ac71]   cursor-pointer group-hover/link hover:text-white'
+                            src="/images/Linkedin.png"
+                            alt='view'
+                            width={40}
+                            height={40}
+                            />
+                </Link>              
+                        
+                </div>
             </div>
-        </div>
+       
         <div>
             <form className="text-green-600 flex flex-col gap-1  "> 
                 <div className='mb-6'>
