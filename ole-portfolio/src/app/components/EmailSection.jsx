@@ -8,7 +8,7 @@ const EmailSection = () => {
        <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-600 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-full -left-4 transform -translate-x-1/2 -translate-y-1/2 '> </div>
             <div>
                 <h5 className='text-xl font-bold my-2'>Let's Connect</h5>
-                <p className='text-[#43eb78] mb-4 max-w-md'>{""}looking forward to networking and discussing further how we can connect
+                <p className='text-[#43eb78] z-10 mb-4 max-w-md'>{""}looking forward to networking and discussing further how we can connect
                 </p>
                 <div className='socials flex flex-row gap-2'>
                     <Link href="https://github.com/OlebogengBogopane">
