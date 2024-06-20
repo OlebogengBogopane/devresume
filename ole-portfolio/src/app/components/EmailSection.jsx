@@ -3,6 +3,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const EmailSection = () => {
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const data = {
+          email: e.target.email.value,
+          subject: e.target.subject.value,  
+          message: e.target.message.value,  
+        }   
+        
+    }
   return (
     <section className='grid  md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
        <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-600 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-full -left-4 transform -translate-x-1/2 -translate-y-1/2 '> </div>
