@@ -15,7 +15,7 @@ export async function POST(req, res) {
       subject: 'Hello world',
       react: (
           <>
-          <p>Email Body</p>
+          <p>{message}</p>
           </>
     ),
     });
