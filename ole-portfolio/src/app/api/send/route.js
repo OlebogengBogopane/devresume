@@ -15,6 +15,8 @@ export async function POST(req, res) {
       subject: 'Hello world',
       react: (
           <>
+          <h1>{subject}</h1>
+  
           <p>{message}</p>
           </>
     ),
