@@ -12,6 +12,7 @@ const EmailSection = () => {
           message: e.target.message.value,  
         }   
         const JSONdata = JSON.stringify(data);
+        const endpoint = "/api/send";
     }
   return (
     <section className='grid  md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
