@@ -1,4 +1,4 @@
-"use client"
+ "use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,10 +18,10 @@ const EmailSection = () => {
         //Form the request for sending data to the server.
         const options = {
             //The method is POST because are sending data.
-            method: "POST",
+            method: 'POST',
             //Tell the server we're sending JSON
             headers: {
-                "Content-Type": "application/json",
+                'Content-Type': 'application/json',
             },
             //Body of the request is the JSON data created above.
             body: JSONdata,
